@@ -1,0 +1,16 @@
+@define-mixin reset {
+    padding: 0;
+    margin: 0;
+}
+
+main { 
+    @mixin reset;
+    
+    color: $colorfore;
+    background-color: $colorback;
+     
+    article {
+        color: $colorback;
+        background-color: $colorfore;
+    }
+}

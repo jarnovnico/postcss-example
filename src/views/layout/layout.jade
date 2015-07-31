@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+	block vars
+	head
+		block title
+			title #{pageTitle} - gulp postcss static site
+		link(rel='stylesheet', href='/styles/styles.min.css')
+
+	body(class='#{bodyClass}')
+
+		header.site-header
+			.container
+				block header
+
+		block content
+		
+		.site-footer
+			.container
+				block footer
+		script(src='/scripts/main.min.js')
