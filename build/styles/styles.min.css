@@ -1,1 +1,153 @@
-body,html{height:100%}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:100%;font-family:Helvetica}*{box-sizing:border-box}main{padding:0;margin:0;color:#333;background-color:#fff}main article{color:#fff;background-color:#333}.about{background-color:tomato}.about__title{color:#fff}
+/*General imports*/
+
+/*Variables*/
+
+/*Mixins*/
+
+main { 
+    padding: 0; 
+    margin: 0;
+    
+    color: #333;
+    background-color: #fff;
+}
+
+main article { 
+    color: #fff; 
+    background-color: #333;
+}
+
+/*Base*/
+html,
+body {
+  height: 100%;
+}
+
+body { 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  font-family: Helvetica;
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+
+body:before, body:after { 
+    content: " "; 
+    display: table;
+}
+
+body:after { 
+    clear: both;
+}
+
+body:before, body:after { 
+    content: " "; 
+    display: table;
+}
+
+body:after { 
+    clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+
+}
+
+/*Modules*/
+html,
+body {
+  height: 100%;
+}
+
+body { 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  font-family: Helvetica;
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+
+}
+
+main { 
+    padding: 0; 
+    margin: 0;
+    
+    color: #333;
+    background-color: #fff;
+}
+
+main article { 
+    color: #fff; 
+    background-color: #333;
+}
+.about { 
+    background-color: #a7a7a7;
+}
+.about__title { 
+    color: #fff; 
+    text-align: center;
+}
+.about__god-div { 
+    background-color: #fff; 
+    height: 100%; 
+    padding: 10px; 
+    max-width: 64em; 
+    margin-left: auto; 
+    margin-right: auto; 
+    *zoom: 1;
+}
+.about__god-div:before, .about__god-div:after { 
+    content: " "; 
+    display: table;
+}
+.about__god-div:after { 
+    clear: both;
+}
+.about__god-title { 
+    text-align: center;
+}
+.about__parent-div { 
+    background-color: #5ae1c0; 
+    height: 100%; 
+    padding: 10px; 
+    display: block; 
+    float: left; 
+    margin-right: 2.35765160%; 
+    width: 48.82117420%;
+}
+.about__parent-div:last-child { 
+    margin-right: 0;
+}
+.about__parent-title { 
+    text-align: center;
+}
+.about__child-div { 
+    background-color: #e15ad0; 
+    height: 400px; 
+    padding: 10px; 
+    display: block; 
+    float: left; 
+    margin-right: 2.35765160%; 
+    width: 48.82117420%;
+}
+.about__child-div:last-child { 
+    margin-right: 0;
+}
+.about__child-title { 
+    text-align: center;
+}

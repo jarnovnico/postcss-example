@@ -25,7 +25,8 @@ var
         require('postcss-mixins'),
         require('postcss-simple-vars'),
         require('postcss-nested'),
-        require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] })
+        require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] }),
+        require('postcss-neat')(/* { options } */)
     ];
 
 // Don't break watch on error
@@ -66,7 +67,7 @@ gulp.task('css', function() {
     .pipe(concat('styles.css'))
     .pipe(postcss(processors))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
+    // .pipe(minifycss())
     .pipe(gulp.dest('build/styles/'))
     .pipe(connect.reload());
 });

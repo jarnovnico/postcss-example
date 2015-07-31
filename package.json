@@ -29,6 +29,7 @@
     "gulp-util": "^3.0.6",
     "postcss-import": "^6.2.0",
     "postcss-mixins": "^0.4.0",
+    "postcss-neat": "^2.2.0",
     "postcss-nested": "^0.3.2",
     "postcss-simple-vars": "^0.3.0",
     "precss": "^0.3.0"

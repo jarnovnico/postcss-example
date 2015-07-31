@@ -1,10 +1,44 @@
 .about {
 
 	& {
-		background-color: tomato;
+		background-color: #a7a7a7;
 	}
 
 	&__title {
 		color: #fff;
+		text-align: center;
+	}
+
+	&__god-div {
+		@neat-outer-container;
+		background-color: #fff;
+		height: 100%;
+		padding: 10px;
+	}
+
+	&__god-title {
+		text-align: center;
+	}
+
+	&__parent-div {
+		@neat-span-columns 6;
+		background-color: #5ae1c0;
+		height: 100%;
+		padding: 10px;
+	}
+
+	&__parent-title {
+		text-align: center;
+	}
+
+	&__child-div {
+		@neat-span-columns 6;
+		background-color: #e15ad0;
+		height: 400px;
+		padding: 10px;
+	}
+
+	&__child-title {
+		text-align: center;
 	}
 }
