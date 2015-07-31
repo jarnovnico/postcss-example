@@ -12,14 +12,7 @@ var
     uglify = require('gulp-uglify'),
     jadeGlobbing  = require('gulp-jade-globbing'),
     del = require('del'),
-    // fs = require("fs"),
-    // atImport = require('postcss-import'),
-    // mixins = require('postcss-mixins'),
-    // simpleVars = require('postcss-simple-vars'),
-    // nested = require('postcss-nested'),
-    // autoprefixer = require('autoprefixer-core');
-
-    // atImport = require('postcss-import'),
+    fs = require("fs"),
     processors = [
         require('precss'),
         require('postcss-mixins'),
@@ -27,55 +20,6 @@ var
         require('postcss-nested'),
         require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] })
     ];
-
-// css to be processed
-// var css = fs.readFileSync("src/styles/style.css", "utf8");
-
-// process css
-// gulp.task('import', function() {
-//     var output = postcss()
-//       .use(atImport())
-//       .process(css, {
-//         // `from` option is required so relative import can work from input dirname
-//         from: "src/styles/style.css"
-//       })
-//       .css
-// });
-
-// gulp.task('import', function() {
-//     return gulp.src('src/styles/style.css')
-//     .pipe(atImport())
-//     .pipe(process(css, {
-//         from: 'src/styles/style.css'
-//     }))
-//     .css;
-// })
-
-// gulp.task('css', function () {
-//     var processors = [
-//         atImport({ from: 'src/styles/style.css' }),
-//         mixins,
-//         simpleVars,
-//         nested,
-//         autoprefixer({browsers: ['last 1 version']})
-//     ];
-//     return gulp.src('src/styles/style.css')
-//         .pipe(postcss(processors))
-//         .pipe(gulp.dest('dest/styles'));
-// });
-
-// gulp.task('css', function () {
-//     var postcss = require('gulp-postcss');
-//     return gulp.src('src/styles/**/*.css')
-//         .pipe( postcss([
-//             // require('postcss-import')({ from: 'src/styles/style.css' }),
-//             require('postcss-mixins')(),
-//             require('postcss-simple-vars')(),
-//             require('postcss-nested')(),
-//             require('autoprefixer-core')({ browser: ['last 1 version']})
-//             ]) )
-//         .pipe( gulp.dest('build/') );
-// });
 
 // Set up a local server
 gulp.task('connect', function() {
