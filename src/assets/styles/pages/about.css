@@ -1,21 +1,10 @@
-/*.about {
-	
-	h1 {
-		color: red;
-	}
-}*/
-
 .about {
 
 	& {
-		background-color: rebeccapurple;
-	}
-
-	& {
-		color: green;
+		background-color: tomato;
 	}
 
 	&__title {
-		color: green;
+		color: #fff;
 	}
 }
