@@ -1,0 +1,38 @@
+.site-header {
+	& {
+		background-color: #4d4d4d;
+		margin: 0;
+		height: auto;
+	}
+
+	&__nav-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		@media (--break-tablet) {
+			@neat-outer-container;
+		}
+	}
+
+	&__nav-item {
+		width: 100%;
+
+		@media (min-width: 768px) {
+			@neat-span-columns 6 12;
+		}
+	}
+
+	&__nav-link {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		color: #fff;
+		padding: 10px 20px;
+
+		&:hover {
+			background-color: #a7a7a7;
+			color: #4d4d4d;
+		}
+	}
+}

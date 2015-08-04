@@ -19,14 +19,15 @@ var
     filter = require('gulp-filter'),
     livereload = require('gulp-livereload'),
     del = require('del'),
-    fs = require("fs"),
     processors = [
         require('precss'),
         require('postcss-mixins'),
         require('postcss-simple-vars'),
         require('postcss-nested'),
         require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] }),
-        require('postcss-neat')(/* { options } */)
+        require('postcss-neat'),
+        require("postcss-custom-media"),
+        require('postcss-media-minmax')
     ];
 
 // Don't break watch on error
@@ -67,7 +68,7 @@ gulp.task('css', function() {
     .pipe(concat('styles.css'))
     .pipe(postcss(processors))
     .pipe(rename({ suffix: '.min' }))
-    // .pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest('build/styles/'))
     .pipe(connect.reload());
 });

@@ -5,16 +5,17 @@ html(lang="en")
 		block title
 			title #{pageTitle} - gulp postcss static site
 		link(rel='stylesheet', href='/styles/styles.min.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 
 	body(class='#{bodyClass}')
 
 		header.site-header
 			.container
-				ul
-					li
-						a(href='index.html') Home
-					li
-						a(href='about.html') About
+				ul.site-header__nav-list
+					li.site-header__nav-item
+						a.site-header__nav-link(href='index.html') Home
+					li.site-header__nav-item
+						a.site-header__nav-link(href='about.html') About
 
 		block content
 		

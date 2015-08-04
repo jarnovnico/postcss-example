@@ -2,3 +2,8 @@ $break-tablet			: 768px;
 $break-desktop-small	: 940px;
 $break-desktop			: 1200px;
 $break-desktop-large	: 1400px;
+
+@custom-media --break-tablet (min-width: 768px);
+@custom-media --break-desktop-small (min-width: 940px);
+@custom-media --break-desktop (min-width: 1200px);
+@custom-media --break-desktop-large (min-width: 1400px);
